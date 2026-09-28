@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zoro Trader — Telegram Channel</title>
+<meta name="description" content="Join the Zoro Trader Telegram channel for trading information, strategies and market insights.">
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;min-height:100%;font-family:Arial,Helvetica,sans-serif}
+body{
+  color:#f2fffb;
+  background:
+    radial-gradient(circle at 50% 5%,rgba(18,218,151,.16),transparent 28%),
+    linear-gradient(180deg,#001c16 0%,#00120f 55%,#00100d 100%);
+}
+.wrap{max-width:720px;margin:auto;padding:42px 18px 35px;text-align:center}
+.brand{
+  font-size:56px;font-weight:800;letter-spacing:-2px;
+  color:#24e5ad;margin:12px 0 28px;
+}
+.badge{
+  display:inline-flex;align-items:center;gap:14px;
+  border:2px solid rgba(30,226,166,.55);
+  border-radius:50px;padding:15px 30px;
+  color:#d8fff2;font-size:21px;font-weight:700;
+  background:rgba(0,40,31,.42);
+}
+.dot{width:17px;height:17px;border-radius:50%;background:#20e8a8;box-shadow:0 0 18px #20e8a8}
+.card{
+  margin-top:48px;padding:50px 30px 38px;
+  border:1px solid rgba(170,210,199,.22);
+  border-radius:40px;background:rgba(7,35,29,.72);
+  box-shadow:0 0 35px rgba(0,0,0,.22);
+}
+h1{font-size:43px;line-height:1.28;margin:0 0 42px}
+h1 span{color:#22e4ab}
+.lead{font-size:23px;line-height:1.65;color:#f0f7f5;margin:0 auto 38px;max-width:600px}
+.features{display:grid;gap:18px}
+.feature{
+  border:2px solid rgba(24,214,157,.35);border-radius:28px;
+  padding:22px 15px;font-size:22px;font-weight:700;color:#aaf8df;
+  background:rgba(0,48,37,.32);
+}
+.join{
+  display:block;margin:48px 0 22px;padding:25px 18px;
+  border-radius:28px;background:#1fd8a6;color:white;
+  text-decoration:none;font-size:27px;font-weight:800;
+  box-shadow:0 10px 30px rgba(20,218,163,.22);
+}
+.sub{font-size:18px;color:#b8c9c4;margin:0 0 24px}
+.redirect{font-size:20px;color:#45e9b8;min-height:28px}
+.disclaimer{font-size:14px;line-height:1.65;color:#70837e;margin-top:60px}
+@media(max-width:520px){
+ .wrap{padding-top:28px}
+ .brand{font-size:45px}
+ .badge{font-size:18px;padding:14px 23px}
+ .card{margin-top:38px;padding:38px 18px 30px;border-radius:32px}
+ h1{font-size:34px}
+ .lead{font-size:20px}
+ .feature{font-size:20px}
+ .join{font-size:24px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="brand">Zoro Trader</div>
+
+  <div class="badge"><span class="dot"></span> Quotex Trading Channel</div>
+
+  <section class="card">
+    <h1>Join <span>Zoro Trader</span> — the community for Quotex traders.</h1>
+
+    <p class="lead">
+      Get trading information, strategies and market insights shared through the channel.
+    </p>
+
+    <div class="features">
+      <div class="feature">📈 Live Signals</div>
+      <div class="feature">⚔️ Pro Strategies</div>
+      <div class="feature">💬 24/7 Community</div>
+    </div>
+  </section>
+
+  <a class="join" href="https://t.me/+ZUsOcTFUao4xM2E1">➤ &nbsp; Join Channel Now</a>
+
+  <p class="sub">Free to join • Instant access • No spam</p>
+  <div class="redirect" id="redirectText">Redirecting to Telegram in 7 seconds...</div>
+
+  <div class="disclaimer">
+    Trading involves risk. Information shared through the channel is for educational
+    and informational purposes only and is not financial advice. No profit or outcome is guaranteed.
+  </div>
+</div>
+
+<script>
+let seconds = 7;
+const text = document.getElementById("redirectText");
+const telegram = "https://t.me/+ZUsOcTFUao4xM2E1";
+
+const timer = setInterval(() => {
+  seconds--;
+  if (seconds > 0) {
+    text.textContent = "Redirecting to Telegram in " + seconds + " seconds...";
+  } else {
+    clearInterval(timer);
+    window.location.href = telegram;
+  }
+}, 1000);
+</script>
+</body>
+</html>
