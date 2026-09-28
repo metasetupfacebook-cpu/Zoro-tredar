@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1487297409899723');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1487297409899723&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+<title>Zoro Trader</title>
+
+<style>
+*{
+  box-sizing:border-box;
+}
+
+body{
+  margin:0;
+  font-family:Arial,sans-serif;
+  color:white;
+  text-align:center;
+  background:
+    radial-gradient(circle at top,#063d30,#00130f 55%,#000d0a);
+}
+
+.container{
+  max-width:720px;
+  margin:auto;
+  padding:40px 18px;
+}
+
+.logo{
+  font-size:52px;
+  font-weight:bold;
+  color:#20e5ad;
+  margin-bottom:30px;
+}
+
+.badge{
+  display:inline-block;
+  padding:15px 28px;
+  border:2px solid #18c997;
+  border-radius:50px;
+  font-size:20px;
+  font-weight:bold;
+  color:#dffff5;
+}
+
+.dot{
+  display:inline-block;
+  width:16px;
+  height:16px;
+  background:#20e5ad;
+  border-radius:50%;
+  margin-right:12px;
+  box-shadow:0 0 15px #20e5ad;
+}
+
+.card{
+  margin-top:45px;
+  padding:45px 25px;
+  border:1px solid #31534c;
+  border-radius:35px;
+  background:rgba(5,35,29,.8);
+}
+
+h1{
+  font-size:40px;
+  line-height:1.35;
+}
+
+h1 span{
+  color:#20e5ad;
+}
+
+.text{
+  font-size:21px;
+  line-height:1.6;
+  margin:30px 0;
+}
+
+.feature{
+  margin:17px 0;
+  padding:22px;
+  border:2px solid #116f58;
+  border-radius:25px;
+  font-size:21px;
+  font-weight:bold;
+  color:#a8f5dd;
+}
+
+.join{
+  display:block;
+  margin-top:45px;
+  padding:25px;
+  background:#20d7a5;
+  color:white;
+  text-decoration:none;
+  border-radius:25px;
+  font-size:25px;
+  font-weight:bold;
+  box-shadow:0 8px 25px rgba(32,215,165,.3);
+}
+
+.small{
+  margin-top:22px;
+  color:#b7c7c2;
+  font-size:17px;
+}
+
+.redirect{
+  margin-top:22px;
+  color:#35e7b2;
+  font-size:19px;
+  font-weight:bold;
+}
+
+.note{
+  margin-top:55px;
+  color:#71817d;
+  font-size:14px;
+  line-height:1.6;
+}
+
+@media(max-width:500px){
+
+.logo{
+  font-size:45px;
+}
+
+h1{
+  font-size:33px;
+}
+
+.text{
+  font-size:19px;
+}
+
+.feature{
+  font-size:19px;
+}
+
+.join{
+  font-size:23px;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <div class="logo">
+    Zoro Trader
+  </div>
+
+  <div class="badge">
+    <span class="dot"></span>
+    Quotex Trading Channel
+  </div>
+
+  <div class="card">
+
+    <h1>
+      Join <span>Zoro Trader</span> —
+      the community for Quotex traders.
+    </h1>
+
+    <div class="text">
+      Get trading information, strategies and
+      market insights shared through the channel.
+    </div>
+
+    <div class="feature">
+      📈 Live Signals
+    </div>
+
+    <div class="feature">
+      ⚔️ Pro Strategies
+    </div>
+
+    <div class="feature">
+      💬 24/7 Community
+    </div>
+
+  </div>
+
+  <a
+    class="join"
+    href="https://t.me/+ZUsOcTFUao4xM2E1"
+  >
+    ➤ &nbsp; Join Channel Now
+  </a>
+
+  <div class="small">
+    Free to join • Instant access • No spam
+  </div>
+
+  <div class="redirect" id="redirect">
+    Redirecting to Telegram in 7 seconds...
+  </div>
+
+  <div class="note">
+    Trading involves risk. Information shared through the
+    channel is for educational and informational purposes only
+    and is not financial advice. No profit or outcome is guaranteed.
+  </div>
+
+</div>
+
+<script>
+
+let seconds = 7;
+
+let timer = setInterval(function(){
+
+  seconds--;
+
+  document.getElementById("redirect").innerText =
+    "Redirecting to Telegram in " + seconds + " seconds...";
+
+  if(seconds <= 0){
+
+    clearInterval(timer);
+
+    window.location.href =
+      "https://t.me/+ZUsOcTFUao4xM2E1";
+
+  }
+
+},1000);
+
+</script>
+
+</body>
+</html>
